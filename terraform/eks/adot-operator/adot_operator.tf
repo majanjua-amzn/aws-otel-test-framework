@@ -40,6 +40,7 @@ resource "helm_release" "adot-operator" {
 
   repository = "https://open-telemetry.github.io/opentelemetry-helm-charts"
   chart      = "opentelemetry-operator"
+  version    = "0.58.2"
 
   values = [
     file("./adot-operator/adot-operator-values.yaml")
